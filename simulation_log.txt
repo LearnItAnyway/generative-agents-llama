@@ -1,0 +1,156 @@
+====================== REPEAT 0 ======================
+Toblen Stonehill action: Open trading post, prepare for customers.
+Daran Edermath action: Enjoy breakfast, then tend to apple trees.
+Linene Graywind action: Open the trading post, begin receiving shipments.
+Halia Thornton action: Review finances and operations, meet with miners and traders.
+=== UPDATED LOCATIONS AT TIME 0 FOR Toblen Stonehill===
+Toblen Stonehill moved from Stonehill Inn to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 0 FOR Daran Edermath===
+Daran Edermath moved from Edermath Orchard to Stonehill Inn
+=== UPDATED LOCATIONS AT TIME 0 FOR Linene Graywind===
+Linene Graywind moved from Barthen's Provisions to Stonehill Inn
+=== UPDATED LOCATIONS AT TIME 0 FOR Halia Thornton===
+Halia Thornton moved from Phandalin Town Square to Stonehill Inn
+====================== REPEAT 1 ======================
+Toblen Stonehill action: I wake up, have breakfast, and begin restocking shelves.
+Daran Edermath action: Visit Linene Graywind's trading post.
+Linene Graywind action: Restock shelves, open trading post.
+Halia Thornton action: I approach Daran Edermath and introduce myself, hoping to establish a connection with a respected member of the community.
+=== UPDATED LOCATIONS AT TIME 1 FOR Toblen Stonehill===
+Toblen Stonehill moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 1 FOR Daran Edermath===
+Daran Edermath moved from Stonehill Inn to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 1 FOR Linene Graywind===
+Linene Graywind moved from Stonehill Inn to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 1 FOR Halia Thornton===
+Halia Thornton moved from Stonehill Inn to Barthen's Provisions
+====================== REPEAT 2 ======================
+Toblen Stonehill action: Inspect inventory, prepare for trading.
+Daran Edermath action: I chat with Toblen and Linene about town news.
+Linene Graywind action: Restock shelves, assist customers, answer questions.
+Halia Thornton action: I review finances and inventory.
+=== UPDATED LOCATIONS AT TIME 2 FOR Toblen Stonehill===
+Toblen Stonehill moved from Barthen's Provisions to Stonehill Inn
+=== UPDATED LOCATIONS AT TIME 2 FOR Daran Edermath===
+Daran Edermath moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 2 FOR Linene Graywind===
+Linene Graywind moved from Barthen's Provisions to Stonehill Inn
+=== UPDATED LOCATIONS AT TIME 2 FOR Halia Thornton===
+Halia Thornton moved from Barthen's Provisions to Stonehill Inn
+====================== REPEAT 3 ======================
+Toblen Stonehill action: Prepare for the day's business at the trading post.
+Daran Edermath action: Visit Barthen's Provisions to stock up on supplies.
+Linene Graywind action: I prepare for the day's business at my trading post.
+Halia Thornton action: I approach Toblen Stonehill and Linene Graywind, introducing myself and discussing potential business opportunities.
+=== UPDATED LOCATIONS AT TIME 3 FOR Toblen Stonehill===
+Toblen Stonehill moved from Stonehill Inn to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 3 FOR Daran Edermath===
+Daran Edermath moved from Barthen's Provisions to Edermath Orchard
+=== UPDATED LOCATIONS AT TIME 3 FOR Linene Graywind===
+Linene Graywind moved from Stonehill Inn to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 3 FOR Halia Thornton===
+Halia Thornton moved from Stonehill Inn to Stonehill Inn
+====================== REPEAT 4 ======================
+Toblen Stonehill action: Open the trading post, prepare for customers.
+Daran Edermath action: "Tend to the apple orchard, ensuring the trees are healthy and well-watered."
+Linene Graywind action: Open trading post, restock shelves, prepare for customers.
+Halia Thornton action: Network with the locals, gather information.
+=== UPDATED LOCATIONS AT TIME 4 FOR Toblen Stonehill===
+Toblen Stonehill moved from Barthen's Provisions to Stonehill Inn
+=== UPDATED LOCATIONS AT TIME 4 FOR Daran Edermath===
+Daran Edermath moved from Edermath Orchard to Stonehill Inn
+=== UPDATED LOCATIONS AT TIME 4 FOR Linene Graywind===
+Linene Graywind moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 4 FOR Halia Thornton===
+Halia Thornton moved from Stonehill Inn to Barthen's Provisions
+====================== REPEAT 5 ======================
+Toblen Stonehill action: I chat with Daran Edermath, learning about his past.
+Daran Edermath action: Daran Edermath: Enjoys breakfast, plans day's tasks.
+Linene Graywind action: I prepare for the day's trading, reviewing inventory and negotiating with suppliers.
+Halia Thornton action: I visit Linene Graywind to discuss potential business opportunities.
+=== UPDATED LOCATIONS AT TIME 5 FOR Toblen Stonehill===
+Toblen Stonehill moved from Stonehill Inn to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 5 FOR Daran Edermath===
+Daran Edermath moved from Stonehill Inn to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 5 FOR Linene Graywind===
+Linene Graywind moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 5 FOR Halia Thornton===
+Halia Thornton moved from Barthen's Provisions to Barthen's Provisions
+====================== REPEAT 6 ======================
+Toblen Stonehill action: Open trading post, prepare for customers.
+Daran Edermath action: I greet Linene Graywind and Halia Thornton, introducing myself and discussing the day's plans.
+Linene Graywind action: Restock shelves and open trading post.
+Halia Thornton action: I wake up and prepare for the day.
+=== UPDATED LOCATIONS AT TIME 6 FOR Toblen Stonehill===
+Toblen Stonehill moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 6 FOR Daran Edermath===
+Daran Edermath moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 6 FOR Linene Graywind===
+Linene Graywind moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 6 FOR Halia Thornton===
+Halia Thornton moved from Barthen's Provisions to Stonehill Inn
+====================== REPEAT 7 ======================
+Toblen Stonehill action: Check inventory, receive shipments, open for business.
+Daran Edermath action: Daran visits Barthen's Provisions to purchase supplies.
+Linene Graywind action: Restock shelves and prepare for customers.
+Halia Thornton action: I wake up and prepare for the day.
+=== UPDATED LOCATIONS AT TIME 7 FOR Toblen Stonehill===
+Toblen Stonehill moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 7 FOR Daran Edermath===
+Daran Edermath moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 7 FOR Linene Graywind===
+Linene Graywind moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 7 FOR Halia Thornton===
+Halia Thornton moved from Stonehill Inn to Barthen's Provisions
+====================== REPEAT 8 ======================
+Toblen Stonehill action: Restock shelves and prepare for customers.
+Daran Edermath action: Visit Linene Graywind's trading post.
+Linene Graywind action: I prepare for the day's trading, organizing my inventory and preparing for customers.
+Halia Thornton action: I prepare for the day and review the schedule.
+=== UPDATED LOCATIONS AT TIME 8 FOR Toblen Stonehill===
+Toblen Stonehill moved from Barthen's Provisions to Stonehill Inn
+=== UPDATED LOCATIONS AT TIME 8 FOR Daran Edermath===
+Daran Edermath moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 8 FOR Linene Graywind===
+Linene Graywind moved from Barthen's Provisions to Stonehill Inn
+=== UPDATED LOCATIONS AT TIME 8 FOR Halia Thornton===
+Halia Thornton moved from Barthen's Provisions to Barthen's Provisions
+====================== REPEAT 9 ======================
+Toblen Stonehill action: I prepare for the day's work at my trading post.
+Daran Edermath action: Daran Edermath: Visits Barthen's Provisions for supplies.
+Linene Graywind action: Open trading post, restock shelves.
+Halia Thornton action: I prepare for the day and review the schedule.
+=== UPDATED LOCATIONS AT TIME 9 FOR Toblen Stonehill===
+Toblen Stonehill moved from Stonehill Inn to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 9 FOR Daran Edermath===
+Daran Edermath moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 9 FOR Linene Graywind===
+Linene Graywind moved from Stonehill Inn to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 9 FOR Halia Thornton===
+Halia Thornton moved from Barthen's Provisions to Stonehill Inn
+====================== REPEAT 10 ======================
+Toblen Stonehill action: Restock shelves and prepare for opening.
+Daran Edermath action: Visit Toblen Stonehill's trading post.
+Linene Graywind action: Restock shelves and prepare for customers.
+Halia Thornton action: I network with the locals, gathering information and building relationships.
+=== UPDATED LOCATIONS AT TIME 10 FOR Toblen Stonehill===
+Toblen Stonehill moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 10 FOR Daran Edermath===
+Daran Edermath moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 10 FOR Linene Graywind===
+Linene Graywind moved from Barthen's Provisions to Stonehill Inn
+=== UPDATED LOCATIONS AT TIME 10 FOR Halia Thornton===
+Halia Thornton moved from Stonehill Inn to Stonehill Inn
+====================== REPEAT 11 ======================
+Toblen Stonehill action: Restock shelves and prepare for opening.
+Daran Edermath action: Daran Edermath: Visit Toblen Stonehill, discuss latest shipments.
+Linene Graywind action: I wake up, have breakfast, and begin restocking shelves.
+Halia Thornton action: Schmooze with Linene Graywind, discuss town growth.
+=== UPDATED LOCATIONS AT TIME 11 FOR Toblen Stonehill===
+Toblen Stonehill moved from Barthen's Provisions to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 11 FOR Daran Edermath===
+Daran Edermath moved from Barthen's Provisions to Stonehill Inn
+=== UPDATED LOCATIONS AT TIME 11 FOR Linene Graywind===
+Linene Graywind moved from Stonehill Inn to Barthen's Provisions
+=== UPDATED LOCATIONS AT TIME 11 FOR Halia Thornton===
+Halia Thornton moved from Stonehill Inn to Barthen's Provisions
