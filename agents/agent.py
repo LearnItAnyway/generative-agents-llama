@@ -48,26 +48,28 @@ def summarize_simulation(log_output):
     return response
 
 def get_rating_fast(prompt):
-    prompt_rate = f"[INST]{prompt} [/INST]I will go to "
-    input_ids = tokenizer(prompt_rate, return_tensors='pt').input_ids.cuda()
-    input_ids[0][-1] = 29871
-    with torch.no_grad():
-        output = model(input_ids)
-    rate = output.logits[0, -1][[29896, 29906, 29941, 29946, 29945]].argmax().item()+1
-    return rate
-
-def get_best_location_fast(prompt):
     prompt_rate = f"[INST]{prompt} [/INST]Sure! Here's my rating:\n\nRating: "
     input_ids = tokenizer(prompt_rate, return_tensors='pt').input_ids.cuda()
     input_ids[0][-1] = 29871
     with torch.no_grad():
         output = model(input_ids)
-    loc = output.logits[0, -1][[29900, 29896, 29906, 29941, 29946, 29945, 
+    rate = output.logits[0, -1][[29896, 29906, 29941, 29946, 29945]].argmax().item()+1
+    # 1 2 3 4 5
+    return rate
+
+def get_best_location_fast(prompt):
+    prompt_location = f"[INST]{prompt} [/INST]I will go to "
+    input_ids = tokenizer(prompt_location, return_tensors='pt').input_ids.cuda()
+    input_ids[0][-1] = 29871
+    with torch.no_grad():
+        output = model(input_ids)
+    loc = output.logits[0, -1][[29900, 29896, 29906, 29941, 29946, 29945,
                                 29953, 29955, 29947, 29929, 29910]]
+    # 0 1 2 3 4 5 6 7 8 9 a
     return loc
 
 class Agent:
-     
+
     """
     A class to represent an individual agent in a simulation similar to The Sims.
 
@@ -90,20 +92,20 @@ class Agent:
     --------
     plan(global_time, town_people, prompt_meta):
         Generates the agent's daily plan.
-    
+
     execute_action(other_agents, location, global_time, town_areas, prompt_meta):
         Executes the agent's action based on their current situation and interactions with other agents.
-    
+
     update_memories(other_agents, global_time, action_results):
         Updates the agent's memories based on their interactions with other agents.
-    
+
     compress_memories(memory_ratings, global_time, MEMORY_LIMIT=10):
         Compresses the agent's memories to a more manageable and relevant set.
-    
+
     rate_locations(locations, town_areas, global_time, prompt_meta):
         Rates different locations in the simulated environment based on the agent's preferences and experiences.
     """
-     
+
     def __init__(self, name, description, starting_location, world_graph):
         self.name = name
         self.description = description
@@ -113,10 +115,10 @@ class Agent:
         self.compressed_memories = []
         self.plans = ""
         self.world_graph = world_graph
-        
+
     def __repr__(self):
         return f"Agent({self.name}, {self.description}, {self.location})"
-    
+
     def plan(self, global_time, prompt_meta):
         """
         Generates the agent's daily plan.
@@ -133,11 +135,11 @@ class Agent:
         prompt += f"Write it down in an hourly basis, starting at {str(global_time)}:00. "
         prompt += f"Write only one or two very short sentences. Be very brief. Use at most 50 words."
         self.plans = generate(prompt_meta.format(prompt))
-    
+
     def execute_action(self, other_agents, location, global_time, town_areas, prompt_meta):
 
         """Executes the agent's action based on their current situation and interactions with other agents.
-        
+
         Parameters:
         -----------
         other_agents : list
@@ -158,24 +160,24 @@ class Agent:
         """
 
         people = [agent.name for agent in other_agents if agent.location == location]
-        
+
         prompt = f"You are {self.name}. Your plans are: {self.plans}. "
         prompt += f"You are currently in {location.name} "
         prompt += f"with the following description: {town_areas[location.name]}. "
         prompt += f"It is currently {str(global_time)}:00. The following people are in this area: {', '.join(people)}. "
-        
+
         people_description = [f"{agent.name}: {agent.description}" for agent in other_agents if agent.location == location.name]
         prompt += ' You know the following about people: ' + '. '.join(people_description)
-        
+
         prompt += "What do you do in the next hour? Use at most 10 words to explain."
         action = generate(prompt_meta.format(prompt))
         return action
-    
+
     def update_memories(self, other_agents, global_time, action_results):
-        
+
         """
         Updates the agent's memories based on their interactions with other agents.
-        
+
         Parameters:
         -----------
         other_agents : list
@@ -194,7 +196,7 @@ class Agent:
 
         """
         Compresses the agent's memories to a more manageable and relevant set.
-        
+
         Parameters:
         -----------
         global_time : int
@@ -212,12 +214,12 @@ class Agent:
         relevant_memories = memories_sorted[:MEMORY_LIMIT]
         memory_string_to_compress = '.'.join([a[0] for a in relevant_memories])
         return f'[Recollection at Time {str(global_time)}:00: {memory_string_to_compress}]'
-    
+
     def rate_memories(self, locations, global_time, prompt_meta):
 
         """
          Rates the agent's memories based on their relevance and importance.
-        
+
         Parameters:
         -----------
         locations : Locations
@@ -251,7 +253,7 @@ class Agent:
 
         """
         Rates different locations in the simulated environment based on the agent's preferences and experiences.
-        
+
         Parameters:
         -----------
         locations : Locations
@@ -282,14 +284,14 @@ class Agent:
         prompt += location_prompt
         prompt += f"Answer with symbol that indicates the location."
         ratings = get_best_location_fast(prompt)
-        
+
         for j, (k, v) in enumerate(locations.locations.items()):
             res = ratings[j]
             rating = str(res)
             place_ratings.append((k, rating, res))
         self.place_ratings = place_ratings
         return sorted(place_ratings, key=lambda x: x[1], reverse=True)
-    
+
     def move(self, new_location_name):
 
         if new_location_name == self.location:
